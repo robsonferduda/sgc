@@ -8,7 +8,6 @@
     <body>
         <div class="corpo">
             {!! $certificado->de_texto_certificado !!}
-            {{ ENV('ASSET_URL').'/uploads/modelos/certf_diretor_coordenador_limpo.jpg' }}
         </div>
     </body>
 </html>
