@@ -28,7 +28,9 @@
                     <div>
                         @if(Session::get('dados'))
 
-                            @if(count(Session::get('dados')) == 1)
+                            @if(count(Session::get('dados')) == 0)
+                                <p>Não foram encontrados registros para o documento informado</p>
+                            @elseif(count(Session::get('dados')) == 1)
                                 <p>Foi encontrado <strong>1</strong> registro de certificado para o documento informado</p>
                             @else
                                 <p>Foram encontrados <strong>{{ count(Session::get('dados')) }}</strong> registros de certificado para o documento informado</p>
