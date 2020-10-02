@@ -32,7 +32,7 @@
             <span class="navbar-toggler-bar bar3"></span>
           </button>
         </div>
-        <a class="navbar-brand" href="{{ url('/') }}">Gerenciador de Certificados</a>
+        <a class="navbar-brand" href="{{ url('/') }}"><span style="text-transform: none;">Gestão de Certificados para Eventos</span></a>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -43,7 +43,7 @@
         <ul class="navbar-nav">
     
           <li class="nav-item">
-            <a href="{{ url('login') }}" class="nav-link">
+            <a href="{{ url('emitir') }}" class="nav-link">
             <i class="fas fa-file-pdf"></i>
               Emitir Certificado
             </a>
