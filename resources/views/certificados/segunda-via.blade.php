@@ -47,6 +47,11 @@
                                     <div><strong>Emitido para</strong>: {!! $certificado->participante->ds_nome_par !!}</div>
                                     <div><strong>Data de liberação</strong>: {{ date('d/m/Y H:i:s', strtotime($certificado->created_at))  }}</div>  
                                     <div><strong>Tipo do certificado</strong>: {!! $certificado->modelo->tipo->ds_tipo_participacao_tip !!}</div> 
+                                    @if($certificado->modelo->tipo->id_tipo_participacao_tip == 4)
+
+                                        <div><strong>Tipo do trabalho</strong>: {{ $certificado->metadados->where('label_metadado_cem','#titulo')->first()->valor_metadado_cem }}</div> 
+
+                                    @endif
                                     <div><a href="{{ url('certificados/gerar/'.$certificado->ds_hash_cer) }}"><i class="fa fa-file-pdf-o text-danger"></i> Emitir Certificado</a></div>
                                 </div>
                                 

@@ -3,16 +3,20 @@
 namespace App\Http\Controllers;
 
 use DB;
+use Excel;
 use PDF;
 use Mail;
 use App\Utils;
 use App\Certificado;
+use App\CertificadoMetadado;
 use App\Participante;
 use App\ModeloCertificado;
 use App\CertificadoCiki;
 use App\ParticipanteCiki;
 use Laracasts\Flash\Flash;
 use Illuminate\Http\Request;
+use App\Imports\ParticipanteImport;
+use App\Http\Requests\CertificadoArquivoRequest;
 
 class CertificadoController extends Controller
 {
@@ -27,11 +31,123 @@ class CertificadoController extends Controller
         return view('certificados/index', compact('certificados'));
     }
 
+    public function arquivo()
+    {
+        $modelos = ModeloCertificado::all();
+        return view('certificados/arquivos', compact('modelos'));
+    }
+
     public function create()
     {
         $participantes = Participante::orderBy('ds_nome_par')->get();
         $modelos = ModeloCertificado::all();
         return view('certificados/create', compact('participantes','modelos'));
+    }
+
+    public function cadastrarLista(CertificadoArquivoRequest $request)
+    {
+
+        $file = $request->file('arquivo');
+        $extensions = array("csv","CSV");
+
+        if($file){
+
+            $path = $file->getRealPath();
+            if(in_array($file ->getClientOriginalExtension(),$extensions)){
+                
+                    $data = Excel::toCollection(new ParticipanteImport,$file);
+
+                    foreach($data as $participante){
+
+                        foreach($participante as $p){
+
+                            $participante = Participante::where('ds_email_par',$p->get('email'))->with('certificado')->first();
+
+                            DB::transaction(function () use ($p, $request, $participante) {
+    
+                                if(!$participante){
+
+                                    $pa = new Participante();
+                                    $pa->ds_nome_par = $p->get('nome');
+                                    $pa->ds_email_par = $p->get('email');
+                                    $participante = $pa->save();
+    
+                                    $flag = true;
+    
+                                    while($flag){
+                                        $hash = Utils::gerarHash();
+                                        if(!Certificado::where('ds_hash_cer',$hash)->first()){
+                                            $flag = false;
+                                        }
+                                    }
+    
+                                    $certicado = new Certificado();
+                                    $certicado->id_participante_par = $pa->id_participante_par;
+                                    $certicado->id_modelo_certificado_moc = $request->id_modelo_certificado_moc;
+                                    $certicado->id_situacao_sit = 1;
+                                    $certicado->ds_hash_cer = $hash;
+                                    $certicado->save();
+
+                                    if($request->id_modelo_certificado_moc == 4)
+                                    {
+                                        $metadados = new CertificadoMetadado();
+                                        $metadados->id_certificado_cer = $certicado->id_certificado_cer;
+                                        $metadados->label_metadado_cem = '#autores';
+                                        $metadados->valor_metadado_cem = $p->get('autores');
+                                        $metadados->save();
+
+                                        $metadados = new CertificadoMetadado();
+                                        $metadados->id_certificado_cer = $certicado->id_certificado_cer;
+                                        $metadados->label_metadado_cem = '#titulo';
+                                        $metadados->valor_metadado_cem = $p->get('titulo');
+                                        $metadados->save();
+                                    }
+    
+                                }else{
+    
+                                    $flag = true;
+    
+                                    while($flag){
+                                        $hash = Utils::gerarHash();
+                                        if(!Certificado::where('ds_hash_cer',$hash)->first()){
+                                            $flag = false;
+                                        }
+                                    }
+    
+                                    $certicado = new Certificado();
+                                    $certicado->id_participante_par = $participante->id_participante_par;
+                                    $certicado->id_modelo_certificado_moc = $request->id_modelo_certificado_moc;
+                                    $certicado->id_situacao_sit = 1;
+                                    $certicado->ds_hash_cer = $hash;
+                                    $certicado->save();
+
+                                    if($request->id_modelo_certificado_moc == 4)
+                                    {
+                                        $metadados = new CertificadoMetadado();
+                                        $metadados->id_certificado_cer = $certicado->id_certificado_cer;
+                                        $metadados->label_metadado_cem = '#autores';
+                                        $metadados->valor_metadado_cem = $p->get('autores');
+                                        $metadados->save();
+
+                                        $metadados = new CertificadoMetadado();
+                                        $metadados->id_certificado_cer = $certicado->id_certificado_cer;
+                                        $metadados->label_metadado_cem = '#titulo';
+                                        $metadados->valor_metadado_cem = $p->get('titulo');
+                                        $metadados->save();
+                                    }
+    
+                                }
+                                
+
+                            });
+
+                        }
+                    }
+            }
+
+        }
+
+        //return redirect('certificados/cadastrar/arquivo')->withInput();
     }
 
     public function store(Request $request)

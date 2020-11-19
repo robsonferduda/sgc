@@ -41,8 +41,6 @@ class ParticipantesController extends Controller
             $path = $file->getRealPath();
             if(in_array($file ->getClientOriginalExtension(),$extensions)){
                 
-              
-                    
                     $data = Excel::toCollection(new ParticipanteImport,$file);
 
                     foreach($data as $participante){

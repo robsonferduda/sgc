@@ -1,7 +1,7 @@
 <html>
     <head>
         <style>
-            body { background-image: url({{ ENV('ASSET_URL').'/img/modelos/ciki_2020_resized4.jpg' }}); background-position: bottom right; background-repeat: no-repeat; }
+            body { background-image: url({{ ENV('ASSET_URL').'/img/modelos/modelo_ciki_x_resized.jpg' }}); background-position: bottom right; background-repeat: no-repeat; }
             .corpo { text-align: center; padding-top: 150px; min-height: 500px; }
             .corpo p { font-size: 17px; }
             .corpo h1 { padding-bottom: 12px; }

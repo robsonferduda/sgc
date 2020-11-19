@@ -14,6 +14,7 @@ Route::post('certificados/validacao', 'CertificadoController@validarCertificado'
 Route::get('certificados/gerar/{hash}', 'CertificadoController@gerarCertificado');
 Route::get('certificados/validar/{hash}', 'CertificadoController@validarHash');
 Route::get('certificados/notificar/{id}', 'CertificadoController@notificar');
+Route::get('certificados/cadastrar/arquivo', 'CertificadoController@arquivo');
 
 Auth::routes();
 
@@ -38,3 +39,4 @@ Route::get('usuarios', 'UserController@index');
 
 Route::post('certificado/emitir', 'CertificadoController@emitir');
 Route::post('certificado/validar', 'CertificadoController@validar');
+Route::post('certificado/create/arquivo', 'CertificadoController@cadastrarLista');

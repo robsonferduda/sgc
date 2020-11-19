@@ -12,6 +12,6 @@ class CertificadoMetadado extends Model
     protected $connection = 'pgsql';
     protected $table = 'certificado_metadados_cem';
     protected $primaryKey = 'id_certificado_metadados_cem';
-    protected $fillable = [];
+    protected $fillable = ['id_certificado_cer','label_metadado_cer','valor_metadado_cer'];
 
 }

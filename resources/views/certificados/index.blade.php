@@ -9,6 +9,7 @@
                 </div>
                 <div class="col-md-6">
                     <a href="{{ url('certificados/create') }}" class="btn btn-info pull-right" style="margin-right: 12px;"><i class="fa fa-plus"></i> Cadastrar</a>
+                    <a href="{{ url('certificados/cadastrar/arquivo') }}" class="btn btn-primary pull-right" style="margin-right: 12px;"><i class="fa fa-plus"></i> Cadastrar via arquivo</a>
                 </div>
             </div>
         </div>
