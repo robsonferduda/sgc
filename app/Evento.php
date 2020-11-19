@@ -9,6 +9,7 @@ class Evento extends Model
 {
     use SoftDeletes;
     
+    protected $connection = 'pgsql';
     protected $table = 'evento_eve';
     protected $primaryKey = 'cd_evento_eve';
     protected $fillable = ['nm_evento_eve','dt_inicio_eve','dt_final_eve'];

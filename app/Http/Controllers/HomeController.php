@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Evento;
+use App\Certificado;
+use App\Participante;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -13,6 +16,9 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('home');
+        $eventos = Evento::count();
+        $certificados = Certificado::count();
+        $participantes = Participante::count();
+        return view('home', compact('participantes','eventos','certificados'));
     }
 }

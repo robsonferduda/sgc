@@ -9,13 +9,28 @@ class Certificado extends Model
 {
     use SoftDeletes;
     
+    protected $connection = 'pgsql';
     protected $table = 'certificado_cer';
-    protected $primaryKey = 'cd_certificado_cer';
-    protected $keyType = 'integer';
-    protected $fillable = ['cd_evento_eve', 'id_tipo_participacao_tip', 'total_horas_cer', 'ds_conteudo_cer','fl_complemento_cer', 'complemento_cer'];
+    protected $primaryKey = 'id_certificado_cer';
+    protected $fillable = [];
 
-    public function evento()
+    public function participante()
     {
-        return $this->belongsTo('App\Evento', 'cd_evento_eve', 'cd_evento_eve');
+        return $this->hasOne('App\Participante', 'id_participante_par', 'id_participante_par');
+    }
+
+    public function modelo()
+    {
+        return $this->hasOne('App\ModeloCertificado', 'id_modelo_certificado_moc', 'id_modelo_certificado_moc');
+    }
+
+    public function situacao()
+    {
+        return $this->belongsTo('App\Situacao', 'id_situacao_sit', 'id_situacao_sit');
+    } 
+
+    public function metadados()
+    {
+        return $this->hasMany('App\CertificadoMetadado', 'id_certificado_cer', 'id_certificado_cer');
     }
 }

@@ -12,7 +12,7 @@
                   <div class="col-7 col-md-8">
                     <div class="numbers">
                       <p class="card-category">Eventos</p>
-                      <p class="card-title">{{ count(\App\Evento::all()) }}<p>
+                      <p class="card-title">{{ $eventos }}<p>
                     </div>
                   </div>
                 </div>
@@ -38,7 +38,7 @@
                   <div class="col-7 col-md-8">
                     <div class="numbers">
                       <p class="card-category">Certificados</p>
-                      <p class="card-title">58<p>
+                      <p class="card-title">{{ $certificados }}<p>
                     </div>
                   </div>
                 </div>
@@ -59,13 +59,13 @@
                 <div class="row">
                   <div class="col-5 col-md-4">
                     <div class="icon-big text-center icon-warning">
-                      <i class="nc-icon nc-circle-10 text-danger"></i>
+                      <i class="fa fa-group text-danger"></i>
                     </div>
                   </div>
                   <div class="col-7 col-md-8">
                     <div class="numbers">
-                      <p class="card-category">Usuários</p>
-                      <p class="card-title">23<p>
+                      <p class="card-category">Participantes</p>
+                      <p class="card-title">{{ $participantes }}<p>
                     </div>
                   </div>
                 </div>
@@ -85,13 +85,13 @@
                 <div class="row">
                   <div class="col-5 col-md-4">
                     <div class="icon-big text-center icon-warning">
-                      <i class="nc-icon nc-chart-bar-32 text-primary"></i>
+                      <i class="fa fa-send text-primary"></i>
                     </div>
                   </div>
                   <div class="col-7 col-md-8">
                     <div class="numbers">
-                      <p class="card-category">Acessos</p>
-                      <p class="card-title">03 Online<p>
+                      <p class="card-category">Notificações</p>
+                      <p class="card-title">58<p>
                     </div>
                   </div>
                 </div>

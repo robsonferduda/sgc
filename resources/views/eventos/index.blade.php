@@ -11,7 +11,7 @@
                     <a href="{{ url('eventos/create') }}" class="btn btn-info pull-right" style="margin-right: 12px;"><i class="fa fa-plus"></i> Cadastrar</a>
                 </div>
                 <div class="col-md-12">
-                    <span><i class="fa fa-info-circle" style="margin-left: 15px;"></i> Os eventos possuem um ou mais certificados. Utilize a opção certificado <i class="fa fa-file-pdf-o text-warning"></i> para realizar o cadastro.</span>
+                    <span><i class="fa fa-info-circle" style="margin-left: 15px;"></i> Os eventos possuem um ou mais certificados. Utilize a opção certificados <i class="fa fa-file-pdf-o text-warning"></i> para visualizar e fazer o cadastro.</span>
                 </div>
             </div>
         </div>

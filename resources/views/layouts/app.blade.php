@@ -17,6 +17,7 @@
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="{{ asset('demo/demo.css') }}" rel="stylesheet" />
   <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 
 <body class="">
@@ -36,10 +37,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('certificados') }}">
+                  <a href="{{ url('certificados/create') }}">
                     <i class="nc-icon nc-single-copy-04"></i>
-                    <p>Certificados</p>
-                    </a>
+                      <p>Certificados</p>
+                  </a>
                 </li>
                 <li>
                     <a href="{{ url('eventos') }}">
@@ -53,6 +54,24 @@
                     <p>Estatísticas</p>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ url('modelos') }}">
+                    <i class="fa fa-file-o"></i>
+                    <p>Modelos</p>
+                    </a>
+                </li> 
+                <li>
+                    <a href="{{ url('notificacoes') }}">
+                    <i class="fa fa-send"></i>
+                    <p>Notificações</p>
+                    </a>
+                </li>                 
+                <li>
+                    <a href="{{ url('participantes') }}">
+                    <i class="fa fa-group"></i>
+                    <p>Participantes</p>
+                    </a>
+                </li>    
                 <li>
                     <a href="{{ url('usuarios') }}">
                     <i class="nc-icon nc-circle-10"></i>
@@ -144,6 +163,7 @@
   <script src="{{ asset('js/plugins/bootstrap-datetimepicker.js') }}"></script>
   <script src="{{ asset('js/plugins/jquery.validate.min.js') }}"></script>
   <script src="{{ asset('demo/demo.js') }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
   
   <script>
     function setFormValidation(id) {
@@ -171,6 +191,8 @@
   </script>
   <script>
     $(document).ready(function() {
+
+      $('.select2').select2();
 
       $("#id_tipo_participacao_tip").change(function(){
         let valor = $('#id_tipo_participacao_tip option:selected').val(); 
@@ -206,6 +228,11 @@
 
         if(texto != '')
           $("#complemento").html(texto);
+      });
+
+      $('#arquivo').on('change',function(){
+        var fileName = $(this).val();
+        $(this).next('.custom-file-label').html(fileName);
       });
       
       $('#datatable').DataTable({

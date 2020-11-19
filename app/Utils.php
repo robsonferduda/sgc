@@ -15,6 +15,16 @@ class Utils
         return $valor;
     }
 
+    public static function gerarHash(){
+
+        //Isso irá gerar uma combinação de 8 caracteres, pseudo-randomicos.
+        //Para passar para maiúsculo utilize o strtoupper, como strtoupper($resultado final). 
+        //Para remover um dos caracteres, afim de torna-lo com 7 ao invés de 8, utilize o substr(), dessa forma substr($resultado_final, 1).
+
+        return strtoupper(substr(bin2hex(random_bytes(5)), 2));
+
+    }
+
     public static function gerar_senha($tamanho, $maiusculas, $minusculas, $numeros, $simbolos)
     {
         $senha = "";

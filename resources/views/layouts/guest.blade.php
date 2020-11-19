@@ -43,16 +43,16 @@
         <ul class="navbar-nav">
     
           <li class="nav-item">
-            <a href="{{ url('emitir') }}" class="nav-link">
+            <a href="{{ url('certificados/segunda-via') }}" class="nav-link">
             <i class="fas fa-file-pdf"></i>
-              Emitir Certificado
+              Segunda Via de Certificados
             </a>
           </li>
          
           <li class="nav-item ">
-            <a href="{{ url('validar') }}" class="nav-link">
+            <a href="{{ url('certificados/validacao') }}" class="nav-link">
               <i class="fa fa-check"></i>
-              Validar Certificado
+                Validação de Certificados
             </a>
           </li>
         </ul>

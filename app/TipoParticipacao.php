@@ -9,8 +9,11 @@ class TipoParticipacao extends Model
 {
     use SoftDeletes;
     
+    protected $connection = 'pgsql';
     protected $table = 'tipo_participacao_tip';
     protected $primaryKey = 'id_tipo_participacao_tip';
     protected $fillable = [''];
+
+    
 
 }

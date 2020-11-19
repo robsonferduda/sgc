@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class ParticipanteCiki extends Model
 {    
+    protected $connection = 'pgsql_ciki';
+
     protected $table = 'participantes';
 
     public function certificado()
