@@ -31,7 +31,10 @@
                             <div><strong>Evento</strong>: {{ Session::get('certificado')->modelo->evento->nm_evento_eve }}</div>
                             <div><strong>Emitido para</strong>: {!! Session::get('certificado')->participante->ds_nome_par !!}</div>
                             <div><strong>Data de liberação</strong>: {!! date('d/m/Y H:i:s', strtotime(Session::get('certificado')->created_at)) !!}</div>  
-                            <div><strong>Tipo do certificado</strong>: {!! Session::get('certificado')->modelo->tipo->ds_tipo_participacao_tip !!}</div>                         
+                            <div><strong>Tipo do certificado</strong>: {!! Session::get('certificado')->modelo->tipo->ds_tipo_participacao_tip !!}</div>   
+                            @if(Session::get('certificado')->modelo->tipo->id_tipo_participacao_tip == 4)
+                                <div><strong>Tipo do trabalho</strong>: {{ Session::get('certificado')->metadados->where('label_metadado_cem','#titulo')->first()->valor_metadado_cem }}</div> 
+                            @endif                      
                             <div><strong>Situação</strong>: <span class="badge badge-{{ Session::get('certificado')->situacao->ds_color_sit }}">{{ Session::get('certificado')->situacao->ds_situacao_sit }}</span></div>
                         @endif
                     </div>
