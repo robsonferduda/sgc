@@ -27,6 +27,7 @@
                       <th>Email</th>
                       <th>Tipo de Certificado</th>
                       <th>Chave</th>
+                      <th>Notificado</th>
                       <th class="disabled-sorting text-center">Ações</th>
                     </tr>
                 </thead>
@@ -37,6 +38,7 @@
                         <th>Email</th>
                         <th>Tipo de Certificado</th>
                         <th>Chave</th>
+                        <th>Notificação</th>
                         <th class="disabled-sorting text-center">Ações</th>
                     </tr>
                 </tfoot>
@@ -47,7 +49,16 @@
                             <td>{{ $c->participante->ds_nome_par }}</td>
                             <td>{{ $c->participante->ds_email_par }}</td>
                             <td>{{ $c->modelo->tipo->ds_tipo_participacao_tip }}</td>
-                            <td><a href="{{ url('certificados/validar/'.$c->ds_hash_cer) }}" target="_blank">{{ $c->ds_hash_cer }}</a></td>
+                            <td class="text-center">
+                                <a href="{{ url('certificados/validar/'.$c->ds_hash_cer) }}" target="_blank">{{ $c->ds_hash_cer }}</a>
+                            </td>
+                            <td class="text-center">
+                                @if($c->fl_notificacao_cer == 'S')
+                                    <span class="badge badge-success">Enviada</span>
+                                @else
+                                    <span class="badge badge-warning">Pendente</span>
+                                @endif
+                            </td>
                             <td class="text-center">
                                 <a title="Notificar" href="{{ url('certificados/notificar/'.$c->id_certificado_cer) }}" class="btn btn-success btn-link btn-icon"><i class="fa fa-send fa-2x"></i></a>
                                 <a title="Editar" href="#" class="btn btn-primary btn-link btn-icon"><i class="fa fa-edit fa-2x"></i></a>

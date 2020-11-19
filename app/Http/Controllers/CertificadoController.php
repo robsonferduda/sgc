@@ -321,15 +321,19 @@ class CertificadoController extends Controller
 
     public function notificar($id)
     {
-        $certicado = Certificado::where('id_certificado_cer', $id)->first();
+        $certificado = Certificado::where('id_certificado_cer', $id)->first();
 
-        if($certicado){
+        if($certificado){
 
-            $to_name = $certicado->participante->ds_nome_par;
-            $to_email = $certicado->participante->ds_email_par;
-            $hash = $certicado->ds_hash_cer; 
-            $evento = $certicado->modelo->evento->nm_evento_eve;
-            $tipo = $certicado->modelo->tipo->ds_tipo_participacao_tip;
+            $to_name = $certificado->participante->ds_nome_par;
+            $to_email = $certificado->participante->ds_email_par;
+            $hash = $certificado->ds_hash_cer; 
+            $evento = $certificado->modelo->evento->nm_evento_eve;
+            $tipo = $certificado->modelo->tipo->ds_tipo_participacao_tip;
+
+            /* Atualização da flag de notificação */
+            $certificado->fl_notificacao_cer = 'S';
+            $certificado->save();
 
             $data = array("name"=> $to_name, 'hash' => $hash, 'evento' => $evento, 'tipo' => $tipo);
 
