@@ -37,7 +37,7 @@
                     </a>
                 </li>
                 <li>
-                  <a href="{{ url('certificados/create') }}">
+                  <a href="{{ url('certificados') }}">
                     <i class="nc-icon nc-single-copy-04"></i>
                       <p>Certificados</p>
                   </a>
