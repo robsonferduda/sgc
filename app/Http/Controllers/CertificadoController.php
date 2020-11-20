@@ -329,7 +329,7 @@ class CertificadoController extends Controller
             $to_email = $certificado->participante->ds_email_par;
             $hash = $certificado->ds_hash_cer; 
             $evento = $certificado->modelo->evento->nm_evento_eve;
-            $tipo = $certificado->modelo->tipo->ds_tipo_participacao_tip;
+            $tipo = ($certificado->modelo->tipo->id_tipo_participacao_tip != 4) ? $certificado->modelo->tipo->ds_tipo_participacao_tip : '';
 
             /* Atualização da flag de notificação */
             $certificado->fl_notificacao_cer = 'S';
@@ -339,7 +339,7 @@ class CertificadoController extends Controller
 
             Mail::send('email.notificacao', $data, function($message) use ($to_name, $to_email, $hash, $evento, $tipo) {
                 $message->to($to_email, $to_name)
-                        ->subject('Certificado de '.$tipo.' disponível - '.$evento)
+                        ->subject('Certificado de '.$tipo.' artigo disponível - '.$evento)
                         ->from('nao.responda.studiokem@gmail.com','Não responda');
             });
 
