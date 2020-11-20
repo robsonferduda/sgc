@@ -27,7 +27,7 @@ class CertificadoController extends Controller
 
     public function index()
     {
-        $certificados = Certificado::all();
+        $certificados = Certificado::where('id_modelo_certificado_moc',4)->get();
         return view('certificados/index', compact('certificados'));
     }
 
