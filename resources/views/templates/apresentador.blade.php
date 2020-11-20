@@ -33,7 +33,12 @@
         <div class="corpo">
             <h2>Article Presentation Certificate</h2>
             <p>
-                The article <strong>"{{ $certificado->metadados->where('label_metadado_cem','#titulo')->first()->valor_metadado_cem }}"</strong> authored by {{ $certificado->metadados->where('label_metadado_cem','#autores')->first()->valor_metadado_cem }} was presented at the X International Congress of Knowledge and Innovation - ciKi 2015 (virtual modality, November 19 and 20, 2020)
+                This is to certify that the article entitled
+                <strong>"{{ $certificado->metadados->where('label_metadado_cem','#titulo')->first()->valor_metadado_cem }}"</strong> 
+                authored by 
+                <strong>{{ $certificado->metadados->where('label_metadado_cem','#autores')->first()->valor_metadado_cem }}</strong> 
+                was accepted, presented and published at the 
+                X International Congress of Knowledge and Innovation - ciKi 2020 (virtual modality, November 19 and 20, 2020)
             </p>
         </div>
     </body>
