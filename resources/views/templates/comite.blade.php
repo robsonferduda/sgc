@@ -1,20 +1,18 @@
 <html>
     <head>
         <style>
-            body { background-image: url({{ ENV('ASSET_URL').'/img/modelos/ciki_2020_resized4.jpg' }}); background-position: bottom right; background-repeat: no-repeat; }
-            .corpo { text-align: center; padding-top: 160px; min-height: 500px; }
-            .corpo p { font-size: 18px; }
-            .corpo h1 { padding-bottom: 12px; }
-            .corpo h2 { padding-bottom: 12px; }
-
-            .rodape { text-align: center; }
-            .rodape p {font-size: 12px; }
+            body { background-image: url({{ ENV('ASSET_URL').'/img/modelos/modelo_ciki_x_resized.jpg' }}); background-position: bottom right; background-repeat: no-repeat; }
+            .corpo { text-align: center; padding-top: 150px; min-height: 500px; }
+            .corpo p { font-size: 17px; }
+            .corpo h1 { padding-bottom: 10px; }
+            .corpo h2 { padding-bottom: 10px; }
+            .corpo p { padding-bottom: 5px; margin: 0px; }
 
             @page {
                 margin: 10%;
                 margin-header: 3mm; 
 	            margin-footer: 3mm; 
-                background-image: url({{ ENV('ASSET_URL').'/img/modelos/ciki_2020_resized4.jpg' }}); background-position: bottom right; background-repeat: no-repeat;
+                background-image: url({{ ENV('ASSET_URL').'/img/modelos/modelo_ciki_x_resized.jpg' }}); background-position: bottom right; background-repeat: no-repeat;
 
                 header: page-header;
 		        footer: page-footer;
