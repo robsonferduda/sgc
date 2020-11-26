@@ -2,10 +2,10 @@
     <head>
         <style>
             body { background-image: url({{ ENV('ASSET_URL').'/img/modelos/ciki_2020_resized4.jpg' }}); background-position: bottom right; background-repeat: no-repeat; }
-            .corpo { text-align: center; padding-top: 180px; min-height: 500px; }
-            .corpo p { font-size: 20px; }
-            .corpo h1 { padding-bottom: 14px; }
-            .corpo h2 { padding-bottom: 14px; }
+            .corpo { text-align: center; padding-top: 160px; min-height: 500px; }
+            .corpo p { font-size: 18px; }
+            .corpo h1 { padding-bottom: 12px; }
+            .corpo h2 { padding-bottom: 12px; }
 
             .rodape { text-align: center; }
             .rodape p {font-size: 12px; }
