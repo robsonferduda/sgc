@@ -30,7 +30,7 @@
 
         <div class="corpo">
             <h2>Scientific Committee Certificate</h2>
-            <h1>Robson Fernando Duda</h1>
+            <h1>{{ $certificado->participante->ds_nome_par }}</h1>
             <p>
                 Participated in the X International Congress of Knowledge and Innovation - ciKi 2020
             </p>
