@@ -29,16 +29,16 @@
         </htmlpagefooter>
 
         <div class="corpo">
-            <h2>Scientific Committee Certificate</h2>
+            <h2>Scientific and Organizing Committee Certificate</h2>
             <h1>{{ $certificado->participante->ds_nome_par }}</h1>
             <p>
-                Participated in the X International Congress of Knowledge and Innovation - ciKi 2020
+                Participated as a member of <strong>Scientific and Organizing Committee</strong> in the 
+            </p>
+            <p>
+                X International Congress of Knowledge and Innovation - ciKi 2020
             </p>
             <p>
                 Virtual Mode on November 19 and 20, 2020
-            </p>
-            <p>
-                How: Organizer, Scientific Committee
             </p>
         </div>
     </body>
