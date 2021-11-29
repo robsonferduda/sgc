@@ -88,7 +88,7 @@ class CertificadoController extends Controller
                                     $certicado->ds_hash_cer = $hash;
                                     $certicado->save();
 
-                                    if($request->id_modelo_certificado_moc == 4)
+                                    if($request->id_modelo_certificado_moc == 6)
                                     {
                                         $metadados = new CertificadoMetadado();
                                         $metadados->id_certificado_cer = $certicado->id_certificado_cer;
@@ -121,7 +121,7 @@ class CertificadoController extends Controller
                                     $certicado->ds_hash_cer = $hash;
                                     $certicado->save();
 
-                                    if($request->id_modelo_certificado_moc == 4)
+                                    if($request->id_modelo_certificado_moc == 6)
                                     {
                                         $metadados = new CertificadoMetadado();
                                         $metadados->id_certificado_cer = $certicado->id_certificado_cer;
