@@ -38,7 +38,7 @@
                 authored by 
                 <strong>{{ $certificado->metadados->where('label_metadado_cem','#autores')->first()->valor_metadado_cem }}</strong> 
                 was accepted, presented and published at the 
-                X International Congress of Knowledge and Innovation - ciKi 2020 (virtual modality, November 19 and 20, 2020)
+                XI International Congress of Knowledge and Innovation - ciKi 2021 (virtual modality, November 18 and 19, 2021)
             </p>
         </div>
     </body>
