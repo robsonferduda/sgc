@@ -31,7 +31,7 @@
                             <select class="form-control select2" name="id_modelo_certificado_moc" id="id_modelo_certificado_moc">
                                 <option value="0">Selecione um modelo</option>
                                 @foreach($modelos as $m)
-                                    <option value="{{ $m->id_modelo_certificado_moc }}">{{ $m->ds_descricao_moc }}</option>
+                                    <option value="{{ $m->id_modelo_certificado_moc }}">{{ $m->evento->nm_evento_eve }} - {{ $m->ds_descricao_moc }}</option>
                                 @endforeach
                             </select>
                         </div>
