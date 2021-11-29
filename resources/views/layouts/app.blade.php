@@ -77,6 +77,12 @@
                     <i class="nc-icon nc-circle-10"></i>
                     <p>Usuários</p>
                     </a>
+                </li>  
+                <li>
+                    <a href="{{ url('arquivos') }}">
+                    <i class="nc-icon nc-circle-10"></i>
+                    <p>Arquivos</p>
+                    </a>
                 </li>                
                 <li>
                     <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">

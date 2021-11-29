@@ -7,6 +7,7 @@ use App\Evento;
 use App\TipoParticipacao;
 use Laracasts\Flash\Flash;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Facades\Session;
 
 class EventoController extends Controller
@@ -20,6 +21,13 @@ class EventoController extends Controller
     {
         $eventos = Evento::paginate(10);
         return view('eventos/index', compact('eventos'));
+    }
+
+    public function teste()
+    {
+        $redis=Redis::connect('127.0.0.1',6379);
+        $visits = Redis::incr('visits'); 
+        
     }
 
     public function certificados($id)

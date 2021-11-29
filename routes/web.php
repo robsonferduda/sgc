@@ -23,6 +23,8 @@ Route::resource('eventos', 'EventoController');
 Route::resource('modelos', 'ModeloController');
 Route::resource('participantes', 'ParticipantesController');
 
+Route::get('mensagem/teste','EventoController@teste');
+
 
 Route::get('notificacoes', 'NotificacaoController@index');
 Route::get('notificacoes/enviar', 'NotificacaoController@enviar');
@@ -40,3 +42,6 @@ Route::get('usuarios', 'UserController@index');
 Route::post('certificado/emitir', 'CertificadoController@emitir');
 Route::post('certificado/validar', 'CertificadoController@validar');
 Route::post('certificado/create/arquivo', 'CertificadoController@cadastrarLista');
+
+Route::get('arquivos', 'DadosController@index');
+Route::post('leitura', 'DadosController@lerArquivo');
