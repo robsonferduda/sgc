@@ -147,7 +147,7 @@ class CertificadoController extends Controller
 
         }
 
-        //return redirect('certificados/cadastrar/arquivo')->withInput();
+        return redirect('certificados/cadastrar/arquivo')->withInput();
     }
 
     public function store(Request $request)
