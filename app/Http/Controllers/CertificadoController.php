@@ -27,7 +27,8 @@ class CertificadoController extends Controller
 
     public function index()
     {
-        $certificados = Certificado::where('created_at', '>', '2021-11-01 00:00:00')->get();
+        //$certificados = Certificado::where('created_at', '>', '2021-11-01 00:00:00')->get();
+        $certificados = Certificado::all();
         return view('certificados/index', compact('certificados'));
     }
 
