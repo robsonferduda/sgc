@@ -63,8 +63,6 @@ class CertificadoController extends Controller
 
                             $participante = Participante::where('ds_email_par',$p->get('email'))->with('certificado')->first();
 
-                            dd($participante);
-
                             DB::transaction(function () use ($p, $request, $participante) {
     
                                 if(!$participante){
