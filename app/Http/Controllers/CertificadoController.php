@@ -59,6 +59,8 @@ class CertificadoController extends Controller
 
                     foreach($data as $participante){
 
+                        dd($participante);
+
                         foreach($participante as $p){
 
                             $participante = Participante::where('ds_email_par',$p->get('email'))->with('certificado')->first();
