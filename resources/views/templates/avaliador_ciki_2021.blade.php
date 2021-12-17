@@ -31,16 +31,10 @@
         </htmlpagefooter>
 
         <div class="corpo">
-            <h2>Evaluator Certificate</h2>
+            <h2>Papers Reviewer Certificate</h2>
             <h1>{{ $certificado->participante->ds_nome_par }}</h1>
             <p>
-                Participated in the XI International Congress of Knowledge and Innovation - ciKi 2021 
-            </p>
-            <p>
-                Virtual Mode on November 18 and 19, 2021
-            </p>
-            <p>
-                How: Reviewer of articles <br/>
+                participated as papers reviewer at the XI International Congress on Knowledge and Innovation (ciKi 2021), held in Maringá, Brazil, in virtual modality on November 18th and 19th, 2021. 
             </p>
         </div>
     </body>
