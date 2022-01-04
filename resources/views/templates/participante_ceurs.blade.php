@@ -27,17 +27,14 @@
     </head>
     <body>
         <htmlpagefooter name="page-footer">
-            <p style="font-size: 12px; text-align: center;">A autenticação deste documento pode ser verificada em https://certificado.studiokem.ufsc.br/certificados/validacao/{{ $certificado->ds_hash_cer }}<p>
+            <p style="font-size: 12px; text-align: center; margin-top: 5px;">A autenticação deste documento pode ser verificada em https://certificado.studiokem.ufsc.br/certificados/validacao/{{ $certificado->ds_hash_cer }}<p>
         </htmlpagefooter>
 
         <div class="corpo">
             <h2>Certificamos que</h2>
             <h1>{{ $certificado->participante->ds_nome_par }}</h1>
             <p>
-                atuou como Participante da CAPACITAÇÃO EM MUNICIPALIZAÇÃO DA AGENDA 2030 
-            </p>
-            <p>
-                realizado no período de 01/10/2021 a 31/10/2021 com carga horária de 10 horas.
+                atuou como Participante da <strong>CAPACITAÇÃO EM MUNICIPALIZAÇÃO DA AGENDA 2030</strong> realizado no período de <strong>01/10/2021</strong> a <strong>31/10/2021</strong> com carga horária de <strong>10</strong> horas.
             </p>
             <p>Esta atividade está amparada pelo Projeto de Extensão intitulado: Curso Introdutório à Municipalização da Agenda 2030</p>
 
