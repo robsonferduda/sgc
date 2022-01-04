@@ -2,7 +2,7 @@
     <head>
         <style>
             body { background-image: url({{ ENV('ASSET_URL').'/img/fundos/ceurs.jpg' }}); background-position: bottom right; background-repeat: no-repeat; }
-            .corpo { text-align: center; padding-top: 180px; min-height: 500px; }
+            .corpo { text-align: center; padding-top: 120px; min-height: 500px; }
             .corpo p { font-size: 20px; }
             .corpo h1 { padding-bottom: 14px; }
             .corpo h2 { padding-bottom: 14px; }
@@ -27,18 +27,24 @@
     </head>
     <body>
         <htmlpagefooter name="page-footer">
-            <p style="font-size: 13px; text-align: center;">The authenticity of this document must be verified in the url https://certificado.studiokem.ufsc.br/certificados/validacao/{{ $certificado->ds_hash_cer }}<p>
+            <p style="font-size: 13px; text-align: center;">A autenticação deste documento pode ser verificada em https://certificado.studiokem.ufsc.br/certificados/validacao/{{ $certificado->ds_hash_cer }}<p>
         </htmlpagefooter>
 
         <div class="corpo">
-            <h2>Participation Certificate</h2>
-            <h1>{{ $certificado->participante->ds_nome_par }}</h1>
+            <h2>Certificado de Participação</h2>
+            <h1>Certificamos que {{ $certificado->participante->ds_nome_par }}</h1>
             <p>
-                Participated in the 11th International Conference on Knowledge and Innovation - ciKi 2021
+                atuou como Participante da CAPACITAÇÃO EM MUNICIPALIZAÇÃO DA AGENDA 2030 
             </p>
             <p>
-                Celebrated in Virtual Mode on the 18th and 19th of November 2021
+                realizado no período de 01/10/2021 a 31/10/2021 com carga horária de 10 horas.
             </p>
+            <p>Esta atividade está amparada pelo Projeto de Extensão intitulado: Curso Introdutório à Municipalização da Agenda 2030</p>
+
+            <h3>Tópicos Abordados</h3>
+            <p>Introdução à Agenda 2030</p>
+            <p>Gestão de Cidades</p>
+            <p>Municipalização da Agenda 2030</p>
         </div>
     </body>
 </html>
