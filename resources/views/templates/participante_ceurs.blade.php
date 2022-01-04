@@ -3,7 +3,7 @@
         <style>
             body { background-image: url({{ ENV('ASSET_URL').'/img/fundos/ceurs.jpg' }}); background-position: bottom right; background-repeat: no-repeat; }
             .corpo { text-align: center; padding-top: 120px; min-height: 500px; }
-            .corpo p { font-size: 20px; }
+            .corpo p { font-size: 16px; }
             .corpo h1 { padding-bottom: 14px; }
             .corpo h2 { padding-bottom: 14px; }
 
@@ -31,8 +31,8 @@
         </htmlpagefooter>
 
         <div class="corpo">
-            <h2>Certificado de Participação</h2>
-            <h1>Certificamos que {{ $certificado->participante->ds_nome_par }}</h1>
+            <h2>Certificamos que</h2>
+            <h1>{{ $certificado->participante->ds_nome_par }}</h1>
             <p>
                 atuou como Participante da CAPACITAÇÃO EM MUNICIPALIZAÇÃO DA AGENDA 2030 
             </p>
