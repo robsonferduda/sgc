@@ -3,9 +3,9 @@
         <style>
             body { background-image: url({{ ENV('ASSET_URL').'/img/fundos/ceurs.jpg' }}); background-position: bottom right; background-repeat: no-repeat; }
             .corpo { text-align: center; padding-top: 120px; min-height: 500px; }
-            .corpo p { font-size: 16px; }
-            .corpo h1 { padding-bottom: 14px; }
-            .corpo h2 { padding-bottom: 14px; }
+            .corpo p { font-size: 14px; }
+            .corpo h1 { padding-bottom: 8px; }
+            .corpo h2 { padding-bottom: 8px; }
 
             .rodape { text-align: center; }
             .rodape p {font-size: 12px; }
@@ -27,7 +27,7 @@
     </head>
     <body>
         <htmlpagefooter name="page-footer">
-            <p style="font-size: 13px; text-align: center;">A autenticação deste documento pode ser verificada em https://certificado.studiokem.ufsc.br/certificados/validacao/{{ $certificado->ds_hash_cer }}<p>
+            <p style="font-size: 12px; text-align: center;">A autenticação deste documento pode ser verificada em https://certificado.studiokem.ufsc.br/certificados/validacao/{{ $certificado->ds_hash_cer }}<p>
         </htmlpagefooter>
 
         <div class="corpo">
