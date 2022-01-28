@@ -37,7 +37,7 @@
                 atuou como Participante da <strong>CAPACITAÇÃO EM MUNICIPALIZAÇÃO DA AGENDA 2030</strong> 
             </p>
             <p>
-                realizado no período de <strong>01/10/2021</strong> a <strong>31/10/2021</strong> com carga horária de <strong>10</strong> horas.
+                realizada no período de <strong>01/10/2021</strong> a <strong>31/10/2021</strong> com carga horária de <strong>10</strong> horas.
             </p>
             <p>Esta atividade está amparada pelo Projeto de Extensão intitulado: Curso Introdutório à Municipalização da Agenda 2030</p>
 
