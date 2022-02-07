@@ -32,13 +32,13 @@
             <h2>Scientific and Organizing Committee Certificate</h2>
             <h1>{{ $certificado->participante->ds_nome_par }}</h1>
             <p>
-                Participated as a member of <strong>Scientific and Organizing Committee</strong> in the 
+                Participated as member of <strong>Scientific and Organizing Committee</strong> at the 
             </p>
             <p>
-                XI International Congress of Knowledge and Innovation - ciKi 2021
+                XI International Congress of Knowledge and Innovation (ciKi 2021), held in Maringá, Brazil, 
             </p>
             <p>
-                Virtual Mode on November 18 and 19, 2021
+                in virtual modality on November 18th and 19th, 2021.
             </p>
         </div>
     </body>
