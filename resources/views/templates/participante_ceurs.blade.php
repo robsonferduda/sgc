@@ -34,7 +34,7 @@
             <h2>Certificamos que</h2>
             <h1>{{ $certificado->participante->ds_nome_par }}</h1>
             <p>
-                atuou como Participante no curso de <strong>CAPACITAÇÃO EM MUNICIPALIZAÇÃO DA AGENDA 2030</strong> ,
+                Atuou como Participante no curso de <strong>CAPACITAÇÃO EM MUNICIPALIZAÇÃO DA AGENDA 2030</strong>,
             </p>
             <p>
                 realizado no período de <strong>01/10/2021</strong> a <strong>31/10/2021</strong>, com carga horária de <strong>10</strong> horas.
