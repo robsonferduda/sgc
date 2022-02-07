@@ -34,12 +34,14 @@
             <h2>Certificamos que</h2>
             <h1>{{ $certificado->participante->ds_nome_par }}</h1>
             <p>
-                atuou como Participante da <strong>CAPACITAÇÃO EM MUNICIPALIZAÇÃO DA AGENDA 2030</strong> 
+                atuou como Participante no curso de <strong>CAPACITAÇÃO EM MUNICIPALIZAÇÃO DA AGENDA 2030</strong> ,
             </p>
             <p>
-                realizada no período de <strong>01/10/2021</strong> a <strong>31/10/2021</strong> com carga horária de <strong>10</strong> horas.
+                realizado no período de <strong>01/10/2021</strong> a <strong>31/10/2021</strong>, com carga horária de <strong>10</strong> horas.
             </p>
-            <p>Esta atividade está amparada pelo Projeto de Extensão intitulado: Curso Introdutório à Municipalização da Agenda 2030</p>
+            <p>
+                Este curso está amparado pelo projeto de extensão "Curso Introdutório à Municipalização da Agenda 2030".
+            </p>
 
             <h3>Tópicos Abordados</h3>
             <p>Introdução à Agenda 2030; Gestão de Cidades; Municipalização da Agenda 2030.</p>
