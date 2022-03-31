@@ -63,7 +63,7 @@
                                 <a title="Emitir" href="{{ url('certificados/gerar/'.$c->ds_hash_cer) }}" class="btn btn-danger btn-link btn-icon"><i class="fa fa-file-pdf-o fa-2x"></i></a>
                                 <a title="Notificar" href="{{ url('certificados/notificar/'.$c->id_certificado_cer) }}" class="btn btn-success btn-link btn-icon"><i class="fa fa-send fa-2x"></i></a>
                                 <a title="Editar" href="#" class="btn btn-primary btn-link btn-icon"><i class="fa fa-edit fa-2x"></i></a>
-                                <a title="Excluir" href="#" class="btn btn-danger btn-link btn-icon"><i class="fa fa-times fa-2x"></i></a>
+                                <a title="Excluir" href="{{ url('certificado/excluir/'.$c->id_certificado_cer) }}" class="btn btn-danger btn-link btn-icon"><i class="fa fa-times fa-2x"></i></a>
                             </td>
                         </tr>
                     @endforeach

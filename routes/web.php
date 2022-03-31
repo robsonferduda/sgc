@@ -15,6 +15,7 @@ Route::get('certificados/gerar/{hash}', 'CertificadoController@gerarCertificado'
 Route::get('certificados/validar/{hash}', 'CertificadoController@validarHash');
 Route::get('certificados/notificar/{id}', 'CertificadoController@notificar');
 Route::get('certificados/cadastrar/arquivo', 'CertificadoController@arquivo');
+Route::get('certificado/excluir/{id}', 'CertificadoController@excluir');
 
 Auth::routes();
 

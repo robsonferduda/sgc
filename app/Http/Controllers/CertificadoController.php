@@ -353,4 +353,13 @@ class CertificadoController extends Controller
         }
 
     }
+
+    public function excluir($id)
+    {
+        $certificado = Certificado::where('id_certificado_cer', $id)->first();
+        $certificado->delete();
+
+        Flash::success("Certificado excluído com sucesso");
+        return redirect('certificados')->withInput();
+    }
 }
