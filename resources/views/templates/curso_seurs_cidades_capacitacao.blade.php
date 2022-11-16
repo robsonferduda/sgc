@@ -38,6 +38,8 @@
                 Programa de Pós-Graduação em Engenharia e Gestão do Conhecimento</strong>, da <strong>Universidade Federal de Santa Catarina</strong>,
                 com carga horária de 40h/a.
             </p>
+            <p></p>
+            <p></p>
             <p>Florianópolis, 15 de novembro de 2022.</p>
         </div>
     </body>
