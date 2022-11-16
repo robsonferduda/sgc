@@ -13,7 +13,7 @@
             @page {
                 margin: 10%;
                 margin-header: 3mm; 
-	            margin-footer: 3mm; 
+	            margin-footer: 2mm; 
                 background-image: url({{ ENV('ASSET_URL').'/img/fundos/certificado_capacitacao.jpg' }}); background-position: bottom right; background-repeat: no-repeat;
 
                 header: page-header;
@@ -27,7 +27,7 @@
     </head>
     <body>
         <htmlpagefooter name="page-footer">
-            <p style="font-size: 12px; text-align: center; margin-top: 10px;">A autenticação deste documento pode ser verificada em https://certificado.studiokem.ufsc.br/certificados/validacao/{{ $certificado->ds_hash_cer }}<p>
+            <p style="font-size: 12px; text-align: center; margin-top: 10px; padding-top: 5px;">A autenticação deste documento pode ser verificada em https://certificado.studiokem.ufsc.br/certificados/validacao/{{ $certificado->ds_hash_cer }}<p>
         </htmlpagefooter>
 
         <div class="corpo">
