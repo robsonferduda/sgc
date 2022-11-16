@@ -27,7 +27,7 @@
     </head>
     <body>
         <htmlpagefooter name="page-footer">
-            <p style="font-size: 12px; text-align: center; margin-top: 5px;">A autenticação deste documento pode ser verificada em https://certificado.studiokem.ufsc.br/certificados/validacao/{{ $certificado->ds_hash_cer }}<p>
+            <p style="font-size: 12px; text-align: center; margin-top: 10px;">A autenticação deste documento pode ser verificada em https://certificado.studiokem.ufsc.br/certificados/validacao/{{ $certificado->ds_hash_cer }}<p>
         </htmlpagefooter>
 
         <div class="corpo">
@@ -38,6 +38,8 @@
                 Programa de Pós-Graduação em Engenharia e Gestão do Conhecimento</strong>, da <strong>Universidade Federal de Santa Catarina</strong>,
                 com carga horária de 40h/a.
             </p>
+            <p></p>
+            <p></p>
             <p></p>
             <p></p>
             <p>Florianópolis, 15 de novembro de 2022.</p>
