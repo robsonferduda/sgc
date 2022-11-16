@@ -13,7 +13,7 @@
             @page {
                 margin: 10%;
                 margin-header: 3mm; 
-	            margin-footer: 2mm; 
+	            margin-footer: 1mm; 
                 background-image: url({{ ENV('ASSET_URL').'/img/fundos/certificado_capacitacao.jpg' }}); background-position: bottom right; background-repeat: no-repeat;
 
                 header: page-header;
