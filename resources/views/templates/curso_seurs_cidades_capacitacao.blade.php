@@ -31,16 +31,14 @@
         </htmlpagefooter>
 
         <div class="corpo">
-            <h1>Certificado de Capacitação</h1>
             <h2>Certificamos que</h2>
             <h1>{{ $certificado->participante->ds_nome_par }}</h1>
             <p>
-                concluiu com sucesso o Curso CEURS Cidades, ofertado pelo Grupo de Pesquisa Coprodução de Commons Digitais do
-                Programa de Pós-Graduação em Engenharia e Gestão do Conhecimento, da Universidade Federal de Santa Catarina,
+                concluiu com sucesso o <strong>Curso CEURS Cidades</strong>, ofertado pelo <strong>Grupo de Pesquisa Coprodução de Commons Digitais do
+                Programa de Pós-Graduação em Engenharia e Gestão do Conhecimento</strong>, da <strong>Universidade Federal de Santa Catarina</strong>,
                 com carga horária de 40h/a.
             </p>
-            <h3>Florianópolis, 15 de novembro de 2022.</h3>
-            <p>Introdução à Agenda 2030; Gestão de Cidades; Municipalização da Agenda 2030.</p>
+            <p>Florianópolis, 15 de novembro de 2022.</p>
         </div>
     </body>
 </html>
