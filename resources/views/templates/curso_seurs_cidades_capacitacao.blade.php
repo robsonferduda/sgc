@@ -45,7 +45,6 @@
             <p>Florianópolis, 15 de novembro de 2022.</p>
             <p></p>
             <p></p>
-            <img style="width: 20%;" src="{{ ENV('ASSET_URL').'/img/fundos/assinatura.jpg' }}" alt="Assinatura">
         </div>
     </body>
 </html>
