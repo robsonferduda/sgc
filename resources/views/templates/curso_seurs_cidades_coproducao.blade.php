@@ -13,7 +13,7 @@
             @page {
                 margin: 10%;
                 margin-header: 3mm; 
-	            margin-footer: 3mm; 
+	            margin-footer: 1mm; 
                 background-image: url({{ ENV('ASSET_URL').'/img/fundos/certificado_capacitacao.jpg' }}); background-position: bottom right; background-repeat: no-repeat;
 
                 header: page-header;
@@ -27,20 +27,27 @@
     </head>
     <body>
         <htmlpagefooter name="page-footer">
-            <p style="font-size: 12px; text-align: center; margin-top: 5px;">A autenticação deste documento pode ser verificada em https://certificado.studiokem.ufsc.br/certificados/validacao/{{ $certificado->ds_hash_cer }}<p>
+            <p style="font-size: 12px; text-align: center; margin-top: 10px; padding-top: 5px;">A autenticação deste documento pode ser verificada em https://certificado.studiokem.ufsc.br/certificados/validacao/{{ $certificado->ds_hash_cer }}<p>
         </htmlpagefooter>
 
         <div class="corpo">
-            <h1>Certificado de Coprodução</h1>
-            <h2>Certificamos que a Equipe formada por</h2>
+            <h2>
+                Certificamos que a Equipe formada por 
+                <b>Robson Fernando Duda</b>,
+                <b>Bruce Dickinson</b>,
+                <b>Roger Waters</b>
+            </h2>
             <h1>{{ $certificado->participante->ds_nome_par }}</h1>
             <p>
-                elaborou o projeto de municipalização da Agenda 2030 intitulado <NOME DO PROJETO>, como requisito para a conclusão do
-                Curso CEURS Cidades, ofertado pelo Grupo de Pesquisa Coprodução de Commons Digitais do
-                Programa de Pós-Graduação em Engenharia e Gestão do Conhecimento da Universidade Federal de Santa Catarina.
+                elaborou o projeto de municipalização da Agenda 2030 intitulado <strong>Sistema de Certificados</strong>, como requisito para a conclusão do
+                <strong>Curso CEURS Cidades</strong>, ofertado pelo <strong>Grupo de Pesquisa Coprodução de Commons Digitais do
+                Programa de Pós-Graduação em Engenharia e Gestão do Conhecimento</strong>, da <strong>Universidade Federal de Santa Catarina</strong>.
             </p>
-            <h3>Florianópolis, 15 de novembro de 2022.</h3>
-            <p>Introdução à Agenda 2030; Gestão de Cidades; Municipalização da Agenda 2030.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p>Florianópolis, 15 de novembro de 2022.</p>          
         </div>
     </body>
 </html>
