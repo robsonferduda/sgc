@@ -31,13 +31,12 @@
         </htmlpagefooter>
 
         <div class="corpo">
-            <h2>
+            <p style="font-size: 16px;">
                 Certificamos que a Equipe formada por 
-                <b>Robson Fernando Duda</b>,
-                <b>Bruce Dickinson</b>,
-                <b>Roger Waters</b>
-            </h2>
-            <h1>{{ $certificado->participante->ds_nome_par }}</h1>
+                <strong>Robson Fernando Duda</strong>,
+                <strong>Bruce Dickinson</strong>,
+                <strong>Roger Waters</strong>
+            </p>
             <p>
                 elaborou o projeto de municipalização da Agenda 2030 intitulado <strong>Sistema de Certificados</strong>, como requisito para a conclusão do
                 <strong>Curso CEURS Cidades</strong>, ofertado pelo <strong>Grupo de Pesquisa Coprodução de Commons Digitais do
