@@ -89,7 +89,7 @@ class CertificadoController extends Controller
                                     $certicado->ds_hash_cer = $hash;
                                     $certicado->save();
 
-                                    if($request->id_modelo_certificado_moc == 6)
+                                    if($request->id_modelo_certificado_moc == 17)
                                     {
                                         $metadados = new CertificadoMetadado();
                                         $metadados->id_certificado_cer = $certicado->id_certificado_cer;
@@ -122,7 +122,7 @@ class CertificadoController extends Controller
                                     $certicado->ds_hash_cer = $hash;
                                     $certicado->save();
 
-                                    if($request->id_modelo_certificado_moc == 6)
+                                    if($request->id_modelo_certificado_moc == 17)
                                     {
                                         $metadados = new CertificadoMetadado();
                                         $metadados->id_certificado_cer = $certicado->id_certificado_cer;
@@ -169,7 +169,9 @@ class CertificadoController extends Controller
             $certicado->id_modelo_certificado_moc = $request->id_modelo_certificado_moc;
                                 
             $certicado->ds_hash_cer = $hash;
-            $certicado->save();            
+            $cert = $certicado->save();   
+            
+            dd($cert);
             
             $retorno = array('flag' => true,
                              'msg' => "Dados inseridos com sucesso");
