@@ -38,7 +38,8 @@
                 authored by 
                 <strong>{{ $certificado->metadados->where('label_metadado_cem','#autores')->first()->valor_metadado_cem }}</strong> 
                 was accepted, presented and published at the 
-                XII International Congress of Knowledge and Innovation - ciKi 2022 (virtual modality, November 07 and 08, 2022)
+                XII International Congress of Knowledge and Innovation - ciKi 2022,
+                held in Monterrey, Mexico, on November 07-09, 2022.
             </p>
         </div>
     </body>
