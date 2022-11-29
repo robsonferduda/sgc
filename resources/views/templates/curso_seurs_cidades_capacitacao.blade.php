@@ -44,7 +44,7 @@
             <p></p>
             <p>Florianópolis, 15 de novembro de 2022.</p>
             <p></p>
-            <div style="text-align: center; margin-top: 70px;">
+            <div style="text-align: center; margin-top: 40px;">
                 <p>________________________</p>
                 <p style="margin-bottom: 0px; padding-bottom: 0px;">Roberto C. S. Santos</p>
                 <p style="margin-top: 0px; padding-top: 0px;">Coordenador</p>
