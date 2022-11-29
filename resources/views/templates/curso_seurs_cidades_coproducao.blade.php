@@ -46,7 +46,13 @@
             <p></p>
             <p></p>
             <p></p>
-            <p>Florianópolis, 15 de novembro de 2022.</p>          
+            <p>Florianópolis, 15 de novembro de 2022.</p>   
+            <p></p>
+            <div style="text-align: center; margin-top: 100px;">
+                <p>________________________</p>
+                <p>Roberto C. S. Santos</p>
+                <p>Coordenador</p>
+            </div>
         </div>
     </body>
 </html>
