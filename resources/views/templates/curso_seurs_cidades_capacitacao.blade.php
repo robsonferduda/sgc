@@ -35,7 +35,7 @@
             <h1>{{ $certificado->participante->ds_nome_par }}</h1>
             <p>
                 concluiu com sucesso o <strong>Curso CEURS Cidades</strong>, ofertado pelo <strong>Grupo de Pesquisa Coprodução de Commons Digitais</strong> do <br/>
-                <strong>Programa de Pós-Graduação em Engenharia e Gestão do Conhecimento</strong>, da <strong>Universidade Federal de Santa Catarina</strong>,
+                <strong>Programa de Pós-Graduação em Engenharia e Gestão do Conhecimento</strong>, da <strong>Universidade Federal de Santa Catarina</strong>, <br/>
                 com carga horária de 40h/a.
             </p>
             <p></p>
