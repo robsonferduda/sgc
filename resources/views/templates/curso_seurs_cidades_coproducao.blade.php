@@ -38,9 +38,9 @@
                 <strong>Roger Waters</strong>
             </p>
             <p>
-                elaborou o projeto de municipalização da Agenda 2030 intitulado <strong>Sistema de Certificados</strong>, como requisito para a conclusão do
-                <strong>Curso CEURS Cidades</strong>, ofertado pelo <strong>Grupo de Pesquisa Coprodução de Commons Digitais do
-                Programa de Pós-Graduação em Engenharia e Gestão do Conhecimento</strong>, da <strong>Universidade Federal de Santa Catarina</strong>.
+                elaborou o projeto de municipalização da Agenda 2030 intitulado <strong>Sistema de Certificados</strong>, como requisito para a conclusão do <br/>
+                <strong>Curso CEURS Cidades</strong>, ofertado pelo <strong>Grupo de Pesquisa Coprodução de Commons Digitais</strong> do <br/>
+                <strong>Programa de Pós-Graduação em Engenharia e Gestão do Conhecimento</strong>, da <strong>Universidade Federal de Santa Catarina</strong>.
             </p>
             <p></p>
             <p></p>

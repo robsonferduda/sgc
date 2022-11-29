@@ -34,8 +34,8 @@
             <h2>Certificamos que</h2>
             <h1>{{ $certificado->participante->ds_nome_par }}</h1>
             <p>
-                concluiu com sucesso o <strong>Curso CEURS Cidades</strong>, ofertado pelo <strong>Grupo de Pesquisa Coprodução de Commons Digitais do
-                Programa de Pós-Graduação em Engenharia e Gestão do Conhecimento</strong>, da <strong>Universidade Federal de Santa Catarina</strong>,
+                concluiu com sucesso o <strong>Curso CEURS Cidades</strong>, ofertado pelo <strong>Grupo de Pesquisa Coprodução de Commons Digitais</strong> do <br/>
+                <strong>Programa de Pós-Graduação em Engenharia e Gestão do Conhecimento</strong>, da <strong>Universidade Federal de Santa Catarina</strong>,
                 com carga horária de 40h/a.
             </p>
             <p></p>
