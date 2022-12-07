@@ -257,7 +257,7 @@ class CertificadoController extends Controller
             $equipe = "";
             $dados->increment('nu_total_impressoes_cer');
 
-            if($dados->metadados){
+            if($dados->metadados->where('label_metadado_cem','#autores')->first()){
 
                 $partes = explode(",", $dados->metadados->where('label_metadado_cem','#autores')->first()->valor_metadado_cem);
                 if(count($partes)){
