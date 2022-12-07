@@ -33,7 +33,7 @@
         <div class="corpo">
             <p style="padding-bottom: 0px; margin-bottom: 0px;">
                 Certificamos que a Equipe formada por <br/>
-                <strong>{{ str_replace(",",", ",$certificado->metadados->where('label_metadado_cem','#autores')->first()->valor_metadado_cem) }}</strong>,
+                <strong>{{ $equipe }}</strong>,
             </p>
             <p style="padding-top: 0px; margin-top: 0px;">
                 elaborou o projeto de municipalização da Agenda 2030 intitulado <br/>
