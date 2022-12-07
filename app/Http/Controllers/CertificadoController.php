@@ -262,8 +262,11 @@ class CertificadoController extends Controller
                 
                 if($i == (count($partes) - 2))
                     $equipe .= $partes[$i]." e ";
-                else
+                elseif($i != (count($partes) - 1))
                     $equipe .= $partes[$i].", ";
+                else
+                    $equipe .= $partes[$i];
+                
             }
 
             $nome_arquivo = 'certificado_'.$tipo.'_'.$dados->participante->ds_email_par.'.pdf';
