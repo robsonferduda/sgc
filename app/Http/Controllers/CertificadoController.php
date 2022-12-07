@@ -256,13 +256,13 @@ class CertificadoController extends Controller
 
             $dados->increment('nu_total_impressoes_cer');
 
-            $nome_arquivo = 'certificado_'.$tipo.'_'.$codigo;
+            $nome_arquivo = 'certificado_'.$tipo.'_'.$codigo.'.pdf';
             $data = [
                 'certificado' => $dados
             ];
             
             $pdf = PDF::loadView('templates.'.$dados->modelo->ds_template_moc, $data,  [], ['title' => 'SGC - Certificado', 'format' => 'A4-L', 'margin_bottom' => 0]);
-            return $pdf->download('certificado_'.$tipo.'.pdf');
+            return $pdf->download($nome_arquivo);
 
         }else{
             Flash::error("Código de autenticação inválido ou não encontrado");
