@@ -255,15 +255,8 @@ class CertificadoController extends Controller
         if($dados){
 
             $dados->increment('nu_total_impressoes_cer');
-            $equipe = "";
-            $partes = explode(",",$dados->metadados->where('label_metadado_cem','#autores')->first()->valor_metadado_cem);
-
-            for ($i=0; $i < count($partes); $i++) { 
-                if($i == (count($partes) -1))
-                    $equipe .= $partes[$i].", ";
-                else
-                    $equipe .= $partes[$i]." e ";
-            }
+            $equipe = str_replace(",",", ",$certificado->metadados->where('label_metadado_cem','#autores')->first()->valor_metadado_cem);
+            $equipe = strpos(",", $equipe);
 
             $nome_arquivo = 'certificado_'.$tipo.'_'.$dados->participante->ds_email_par.'.pdf';
             $data = [
