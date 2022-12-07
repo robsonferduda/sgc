@@ -259,7 +259,7 @@ class CertificadoController extends Controller
             $partes = explode(",",$dados->metadados->where('label_metadado_cem','#autores')->first()->valor_metadado_cem);
 
             for ($i=0; $i < count($partes); $i++) { 
-                if($i == (count(partes) -1))
+                if($i == (count($partes) -1))
                     $equipe .= $partes[$i].", ";
                 else
                     $equipe .= $partes[$i]." e ";
