@@ -40,7 +40,8 @@
                 <strong>{{ $certificado->metadados->where('label_metadado_cem','#titulo')->first()->valor_metadado_cem }}</strong>, 
                 <br/> como requisito para a conclusão do <br/>
                 <strong>Curso CEURS Cidades</strong>, ofertado pelo <strong>Grupo de Pesquisa Coprodução de Commons Digitais</strong> do <br/>
-                <strong>Programa de Pós-Graduação em Engenharia e Gestão do Conhecimento</strong>, da <strong>Universidade Federal de Santa Catarina</strong>.
+                <strong>Programa de Pós-Graduação em Engenharia e Gestão do Conhecimento</strong>, da <strong>Universidade Federal de Santa Catarina</strong>, <br/>
+                com carga horária de 20h/a.
             </p>
             <p></p>
             <p></p>
@@ -48,7 +49,7 @@
             <p></p>
             <p>Florianópolis, {{ date("d") }} de dezembro de {{ date("Y") }}.</p>   
             <p></p>
-            <div style="text-align: center; margin-top: 70px;">
+            <div style="text-align: center; margin-top: 60px;">
                 <p>________________________</p>
                 <p style="margin-bottom: 0px; padding-bottom: 0px;">Roberto Carlos dos Santos Pacheco</p>
                 <p style="margin-top: 0px; padding-top: 0px;">Coordenador</p>
