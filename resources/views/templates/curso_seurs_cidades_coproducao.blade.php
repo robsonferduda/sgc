@@ -31,7 +31,7 @@
         </htmlpagefooter>
 
         <div class="corpo">
-            <p style="font-size: 16px;">
+            <p style="padding-bottom: 0px; margin-bottom: 0px;">
                 Certificamos que a Equipe formada por 
                 <strong>{{ $certificado->metadados->where('label_metadado_cem','#autores')->first()->valor_metadado_cem }}</strong>,
             </p>
@@ -44,7 +44,7 @@
             <p></p>
             <p></p>
             <p></p>
-            <p>Florianópolis, {{ date("d") }} de dezembro de {{ date("d") }}.</p>   
+            <p>Florianópolis, {{ date("d") }} de dezembro de {{ date("Y") }}.</p>   
             <p></p>
             <div style="text-align: center; margin-top: 70px;">
                 <p>________________________</p>
