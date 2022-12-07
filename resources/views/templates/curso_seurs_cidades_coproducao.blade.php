@@ -36,7 +36,9 @@
                 <strong>{{ $certificado->metadados->where('label_metadado_cem','#autores')->first()->valor_metadado_cem }}</strong>,
             </p>
             <p style="padding-top: 0px; margin-top: 0px;">
-                elaborou o projeto de municipalização da Agenda 2030 intitulado <br/><strong>{{ $certificado->metadados->where('label_metadado_cem','#titulo')->first()->valor_metadado_cem }}</strong>, como requisito para a conclusão do <br/>
+                elaborou o projeto de municipalização da Agenda 2030 intitulado <br/>
+                <strong>{{ $certificado->metadados->where('label_metadado_cem','#titulo')->first()->valor_metadado_cem }}</strong>, 
+                <br/> como requisito para a conclusão do <br/>
                 <strong>Curso CEURS Cidades</strong>, ofertado pelo <strong>Grupo de Pesquisa Coprodução de Commons Digitais</strong> do <br/>
                 <strong>Programa de Pós-Graduação em Engenharia e Gestão do Conhecimento</strong>, da <strong>Universidade Federal de Santa Catarina</strong>.
             </p>
