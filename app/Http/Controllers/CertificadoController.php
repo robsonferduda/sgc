@@ -256,12 +256,12 @@ class CertificadoController extends Controller
 
             $dados->increment('nu_total_impressoes_cer');
 
-            $nome_arquivo = 'certificado_'.$codigo;
+            $nome_arquivo = 'certificado_'.$tipo.'_'.$codigo;
             $data = [
                 'certificado' => $dados
             ];
             
-            $pdf = PDF::loadView('templates.'.$dados->modelo->ds_template_moc, $data,  [], ['title' => 'Resultado Indígenas', 'format' => 'A4-L', 'margin_bottom' => 0]);
+            $pdf = PDF::loadView('templates.'.$dados->modelo->ds_template_moc, $data,  [], ['title' => 'SGC - Certificado', 'format' => 'A4-L', 'margin_bottom' => 0]);
             return $pdf->download('certificado_'.$tipo.'.pdf');
 
         }else{
@@ -312,7 +312,7 @@ class CertificadoController extends Controller
                 'certificado' => $dados
             ];
             
-            $pdf = PDF::loadView('certificados.template_antigo', $data,  [], ['title' => 'Resultado Indígenas', 'format' => 'A4-L']);
+            $pdf = PDF::loadView('certificados.template_antigo', $data,  [], ['title' => 'SGC - Certificado', 'format' => 'A4-L']);
             return $pdf->download('certificado.pdf');
 
         }else{
