@@ -256,7 +256,7 @@ class CertificadoController extends Controller
 
             $dados->increment('nu_total_impressoes_cer');
 
-            $nome_arquivo = 'certificado_'.$tipo.'_'.$codigo.'.pdf';
+            $nome_arquivo = 'certificado_'.$tipo.'_'.$dados->participante->ds_email_par.'.pdf';
             $data = [
                 'certificado' => $dados
             ];
