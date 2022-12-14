@@ -23,6 +23,7 @@
                 <thead>
                     <tr>
                       <th>Emissão</th>
+                      <th>Evento</th>
                       <th>Proprietário</th>
                       <th>Email</th>
                       <th>Tipo de Certificado</th>
@@ -34,6 +35,7 @@
                 <tfoot>
                     <tr>
                         <th>Emissão</th>
+                        <th>Evento</th>
                         <th>Proprietário</th>
                         <th>Email</th>
                         <th>Tipo de Certificado</th>
@@ -46,6 +48,7 @@
                     @foreach($certificados as $c)
                         <tr>
                             <td>{!! ($c->created_at) ? date('d/m/Y H:i:s', strtotime($c->created_at)) : '<span class="text-danger">Não informada</span>' !!}</td>
+                            <td>{{ $c->modelo->evento->nm_evento_eve }}</td>
                             <td>{{ $c->participante->ds_nome_par }}</td>
                             <td>{{ $c->participante->ds_email_par }}</td>
                             <td>{{ $c->modelo->tipo->ds_tipo_participacao_tip }}</td>
