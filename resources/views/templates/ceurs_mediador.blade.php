@@ -2,7 +2,7 @@
     <head>
         <style>
             body { background-image: url({{ ENV('ASSET_URL').'/img/fundos/ceurs.jpg' }}); background-position: bottom right; background-repeat: no-repeat; }
-            .corpo { text-align: center; padding-top: 120px; min-height: 500px; }
+            .corpo { text-align: center; padding-top: 100px; min-height: 500px; }
             .corpo p { font-size: 14px; }
             .corpo h1 { padding-bottom: 2px; }
             .corpo h2 { padding-bottom: 2px; }
