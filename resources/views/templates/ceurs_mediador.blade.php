@@ -4,8 +4,8 @@
             body { background-image: url({{ ENV('ASSET_URL').'/img/fundos/ceurs.jpg' }}); background-position: bottom right; background-repeat: no-repeat; }
             .corpo { text-align: center; padding-top: 110px; min-height: 500px; }
             .corpo p { font-size: 14px; }
-            .corpo h1 { padding-bottom: 2px; }
-            .corpo h2 { padding-bottom: 2px; }
+            .corpo h1 { padding-bottom: 10px; }
+            .corpo h2 { padding-bottom: 10px; }
 
             .rodape { text-align: center; }
             .rodape p {font-size: 12px; }
@@ -39,13 +39,8 @@
                 contribuindo com a aplicação da metodologia de trabalho em equipes de coprodução nos municípios da Grande Florianópolis <br/>
                 no período de 03 de setembro a 10 de dezembro de 2022, com carga horária de 100 horas.
             </p>
-            <p>Florianópolis, {{ date("d") }} de dezembro de {{ date("Y") }}.</p>
             <p></p>
-            <div style="text-align: center; margin-top: 10px;">
-                <p style="margin-bottom: 0px; padding-bottom: 0px;">________________________</p>
-                <p style="margin-bottom: 0px; padding-bottom: 0px;">Roberto Carlos dos Santos Pacheco</p>
-                <p style="margin-top: 0px; padding-top: 0px;">Coordenador</p>
-            </div>
+            <p>Florianópolis, {{ date("d") }} de dezembro de {{ date("Y") }}.</p>
         </div>
     </body>
 </html>
