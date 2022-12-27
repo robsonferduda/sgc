@@ -2,10 +2,10 @@
     <head>
         <style>
             body { background-image: url({{ ENV('ASSET_URL').'/img/fundos/ceurs.jpg' }}); background-position: bottom right; background-repeat: no-repeat; }
-            .corpo { text-align: center; padding-top: 110px; min-height: 500px; }
+            .corpo { text-align: center; padding-top: 125px; min-height: 500px; }
             .corpo p { font-size: 14px; }
-            .corpo h1 { padding-bottom: 10px; }
-            .corpo h2 { padding-bottom: 10px; }
+            .corpo h1 { padding-bottom: 12px; }
+            .corpo h2 { padding-bottom: 12px; }
 
             .rodape { text-align: center; }
             .rodape p {font-size: 12px; }
@@ -39,6 +39,7 @@
                 contribuindo com a aplicação da metodologia de trabalho em equipes de coprodução nos municípios da Grande Florianópolis <br/>
                 no período de 03 de setembro a 10 de dezembro de 2022, com carga horária de 100 horas.
             </p>
+            <p></p>
             <p></p>
             <p>Florianópolis, {{ date("d") }} de dezembro de {{ date("Y") }}.</p>
         </div>
