@@ -27,7 +27,7 @@
     </head>
     <body>
         <htmlpagefooter name="page-footer">
-            <p style="font-size: 13px; text-align: center;">The authenticity of this document must be verified in the url https://certificados.studiokem.ufsc.br/certificados/validar/{{ $certificado->ds_hash_cer }}<p>
+            <p style="font-size: 13px; text-align: center;">The authenticity of this document can be verified in the url https://certificados.studiokem.ufsc.br/certificados/validar/{{ $certificado->ds_hash_cer }}<p>
         </htmlpagefooter>
 
         <div class="corpo">
