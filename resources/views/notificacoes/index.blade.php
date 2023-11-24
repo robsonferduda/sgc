@@ -17,7 +17,11 @@
                 <div class="col-md-12">
                     @include('layouts.mensagens')
                 </div>
-                <a href="{{ url('notificacoes/enviar') }}" class="btn btn-info pull-right" style="margin-right: 12px;"><i class="fa fa-plus"></i> Send</a>
+                <div class="col-md-12">
+                    <ul id="list">
+                        <li>Notificações</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

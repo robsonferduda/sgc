@@ -384,4 +384,59 @@ class CertificadoController extends Controller
         Flash::success("Certificado excluído com sucesso");
         return redirect('certificados')->withInput();
     }
+
+    public function status()
+    {
+        return response()->stream(function () {
+
+            $certificados = Certificado::where('id_modelo_certificado_moc', 23)->get();
+
+            foreach ($certificados as $key => $certificado) {
+
+                $nome = ($certificado->participante) ? $certificado->participante->ds_nome_par : "Não encontrado";
+                $id = ($certificado->participante) ? $certificado->participante->id_participante_par : "Não encontrado";
+                
+                echo "event: ping\n";
+                $curDate = date(DATE_ISO8601);
+                echo 'data: {"time": "' . $curDate . '"}';
+                echo "\n\n";
+
+                echo 'data: {"nome": "'.$nome.'"}' . "\n\n";
+                echo 'data: {"total_trades": "'.$id.'"}' . "\n\n";
+
+        
+                ob_flush();
+                flush();
+
+                // Break the loop if the client aborted the connection (closed the page)
+                if (connection_aborted()) {break;}
+                usleep(50000); // 50ms
+
+            }
+
+
+/*
+            while (true) {
+                echo "event: ping\n";
+                $curDate = date(DATE_ISO8601);
+                echo 'data: {"time": "' . $curDate . '"}';
+                echo "\n\n";
+
+                
+                echo 'data: {"total_trades": 7}' . "\n\n";
+
+        
+                ob_flush();
+                flush();
+
+                // Break the loop if the client aborted the connection (closed the page)
+                if (connection_aborted()) {break;}
+                usleep(50000); // 50ms
+            }*/
+
+        }, 200, [
+            'Cache-Control' => 'no-cache',
+            'Content-Type' => 'text/event-stream',
+        ]);
+    }
 }

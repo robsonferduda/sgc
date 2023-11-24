@@ -6,6 +6,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="base-url" content="{{ env('APP_URL') }}">
   <title>{{ config('app.name', 'Laravel') }}</title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -197,6 +198,27 @@
   </script>
   <script>
     $(document).ready(function() {
+
+      var host =  $('meta[name="base-url"]').attr('content');
+
+      /*
+      const eventSource = new EventSource(host+'/certificado/status');
+
+      eventSource.onmessage = function(event) {
+          const data = JSON.parse(event.data);
+
+          console.log(data);
+
+          if (data.time) {
+              document.getElementById('time').innerHTML = data.time;
+          }
+          const newElement = document.createElement("li");
+          const eventList = document.getElementById("list");
+
+          newElement.textContent = "message: " + event.data;
+          eventList.appendChild(newElement);
+      }
+      */
 
       $('.select2').select2();
 
