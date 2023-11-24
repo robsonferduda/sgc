@@ -27,14 +27,14 @@
     </head>
     <body>
         <htmlpagefooter name="page-footer">
-            <p style="font-size: 13px; text-align: center;">The authenticity of this document must be verified in the url https://certificados.studiokem.ufsc.br/certificados/validar/{{ $certificado->ds_hash_cer }}<p>
+            <p style="font-size: 13px; text-align: center;">The authenticity of this document can be verified in the url https://certificados.studiokem.ufsc.br/certificados/validar/{{ $certificado->ds_hash_cer }}<p>
         </htmlpagefooter>
 
         <div class="corpo">
-            <h2>Certificate of Participation</h2>
-            <h1>{{ $certificado->participante->ds_nome_par }}</h1>
+            <h2>Participation Certificate</h2>
             <p>
-                Was present and participated in the XII International Congress of Knowledge and Innovation - CiKi 2022, held in Monterrey, Mexico, on November 7-9, 2022.
+                It is hereby certified that <strong>{{ $certificado->participante->ds_nome_par }}</strong> participated in the joint edition of the 18th International Conference on Knowledge Management (ICKM2023) 
+                and the 13th International Congress on Knowledge and Innovation (CiKi2023), held in Florianópolis, Brazil, from 22 to 24 November 2023, which involved 30 hours of activities. 
             </p>
         </div>
     </body>
