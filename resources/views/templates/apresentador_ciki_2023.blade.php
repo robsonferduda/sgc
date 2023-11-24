@@ -38,7 +38,7 @@
                 authored by 
                 <strong>{{ $certificado->metadados->where('label_metadado_cem','#autores')->first()->valor_metadado_cem }}</strong> 
                 was accepted, presented and published in the joint edition of the 18th International Conference on Knowledge Management (ICKM2023) 
-                and the 13th International Congress on Knowledge and Innovation (CiKi2023), held in Florianópolis, Brazil, from November 22 to 24, 2023
+                and the 13th International Congress on Knowledge and Innovation (CiKi2023), held in Florianópolis, Brazil, from November 22 to 24, 2023.
             </p>
         </div>
     </body>
