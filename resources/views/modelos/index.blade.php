@@ -35,7 +35,7 @@
                 </tfoot>
                 <tbody>
                     @foreach($modelos as $e)
-                        
+                        {{ dd($e) }} 
                     @endforeach
                 </tbody>
             </table>
