@@ -1,7 +1,7 @@
 <html>
     <head>
         <style>
-            body { background-image: url({{ ENV('ASSET_URL').'/img/fundos/ciki_2023.jpeg' }}); background-position: bottom right; background-repeat: no-repeat; }
+            body { background-image: url({{ ENV('ASSET_URL').'/img/fundos/ciki_2023.jpg' }}); background-position: bottom right; background-repeat: no-repeat; }
             .corpo { text-align: center; padding-top: 150px; min-height: 500px; }
             .corpo p { font-size: 17px; }
             .corpo h1 { padding-bottom: 12px; }
@@ -14,7 +14,7 @@
                 margin: 10%;
                 margin-header: 3mm; 
 	            margin-footer: 3mm; 
-                background-image: url({{ ENV('ASSET_URL').'/img/fundos/ciki_2023.jpeg' }}); background-position: bottom right; background-repeat: no-repeat;
+                background-image: url({{ ENV('ASSET_URL').'/img/fundos/ciki_2023.jpg' }}); background-position: bottom right; background-repeat: no-repeat;
 
                 header: page-header;
 		        footer: page-footer;
