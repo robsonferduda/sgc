@@ -33,13 +33,12 @@
         <div class="corpo">
             <h2>Article Presentation Certificate</h2>
             <p>
-                This is to certify that the article entitled
+                This is to certify that the article
                 <strong>"{{ $certificado->metadados->where('label_metadado_cem','#titulo')->first()->valor_metadado_cem }}"</strong> 
                 authored by 
                 <strong>{{ $certificado->metadados->where('label_metadado_cem','#autores')->first()->valor_metadado_cem }}</strong> 
-                was accepted, presented and published at the 
-                XII International Congress of Knowledge and Innovation - ciKi 2022,
-                held in Monterrey, Mexico, on November 07-09, 2022.
+                was accepted, presented and published in the joint edition of the 18th International Conference on Knowledge Management (ICKM2023) 
+                and the 13th International Congress on Knowledge and Innovation (CiKi2023), held in Florianópolis, Brazil, from November 22 to 24, 2023
             </p>
         </div>
     </body>
