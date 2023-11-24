@@ -360,7 +360,7 @@ class CertificadoController extends Controller
 
             $data = array("name"=> $to_name, 'hash' => $hash, 'evento' => $evento, 'tipo' => $tipo);
 
-            Mail::send('email.notificacao', $data, function($message) use ($to_name, $to_email, $hash, $evento, $tipo) {
+            Mail::send('email.notificacao_ciki_2023', $data, function($message) use ($to_name, $to_email, $hash, $evento, $tipo) {
                 $message->to($to_email, $to_name)
                         ->subject('Certificado de '.$tipo.' disponível - '.$evento)
                         ->from('nao.responda.studiokem@gmail.com','Não responda');
