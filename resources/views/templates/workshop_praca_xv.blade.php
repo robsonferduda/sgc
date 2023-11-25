@@ -13,7 +13,7 @@
             @page {
                 margin: 10%;
                 margin-header: 3mm; 
-	            margin-footer: 3mm; 
+	            margin-footer: 1mm; 
                 background-image: url({{ ENV('ASSET_URL').'/img/fundos/workshop_praca_xv.jpg' }}); background-position: bottom right; background-repeat: no-repeat;
 
                 header: page-header;
@@ -21,6 +21,7 @@
             }
 
             @page-footer {
+                padding-top: 5px;
                 font-size: 10px;
             }
         </style>
