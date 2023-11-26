@@ -1,7 +1,7 @@
 <html>
     <head>
         <style>
-            body { background-image: url({{ ENV('ASSET_URL').'/img/fundos/workshop_praca_xv.jpg' }}); background-position: bottom right; background-repeat: no-repeat; }
+            body { background-image: url({{ ENV('ASSET_URL').'/img/fundos/workshop_praca_xv.png' }}); background-position: bottom right; background-repeat: no-repeat; }
             .corpo { text-align: center; padding-top: 45px; min-height: 500px; }
             .corpo p { font-size: 14px; }
             .corpo h1 { padding-bottom: 8px; }
@@ -14,7 +14,7 @@
                 margin: 10%;
                 margin-header: 3mm; 
 	            margin-footer: 1mm; 
-                background-image: url({{ ENV('ASSET_URL').'/img/fundos/workshop_praca_xv.jpg' }}); background-position: bottom right; background-repeat: no-repeat;
+                background-image: url({{ ENV('ASSET_URL').'/img/fundos/workshop_praca_xv.png' }}); background-position: bottom right; background-repeat: no-repeat;
 
                 header: page-header;
 		        footer: page-footer;
@@ -35,7 +35,7 @@
             <h2>Certificamos que</h2>
             <h1>{{ $certificado->participante->ds_nome_par }}</h1>
             <p>
-                Atuou como Participante do <strong>Workshop Conexão - Praça XV ao Mar</strong>,
+                Atuou como PARTICIPANTE do <strong>Workshop Conexão - Praça XV ao Mar</strong>,
                 desenvolvido pelo <strong>Laboratório de Cidades mais Humanas, Inteligentes e Sustentáveis (LabChis)</strong>, da <strong>Universidade Federal de Santa Catarina (UFSC)</strong>, entre os dias <strong>13 de novembro de 2023</strong> e <strong>17 de novembro de 2023</strong>, com carga horária de <strong>20</strong> horas semanais.
             </p>
             <h4>Tópicos Abordados</h4>
