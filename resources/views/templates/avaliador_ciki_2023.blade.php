@@ -1,11 +1,11 @@
 <html>
     <head>
         <style>
-             body { background-image: url({{ ENV('ASSET_URL').'/img/fundos/certificado_resized.png' }}); background-position: bottom right; background-repeat: no-repeat; }
-            .corpo { text-align: center; padding-top: 150px; min-height: 500px; }
-            .corpo p { font-size: 17px; }
-            .corpo h1 { padding-bottom: 10px; }
-            .corpo h2 { padding-bottom: 10px; }
+            body { background-image: url({{ ENV('ASSET_URL').'/img/fundos/ciki_2023.jpg' }}); background-position: bottom right; background-repeat: no-repeat; }
+            .corpo { text-align: center; padding-top: 180px; min-height: 500px; }
+            .corpo p { font-size: 20px; }
+            .corpo h1 { padding-bottom: 14px; }
+            .corpo h2 { padding-bottom: 14px; }
 
             .rodape { text-align: center; }
             .rodape p {font-size: 12px; }
@@ -14,7 +14,7 @@
                 margin: 10%;
                 margin-header: 3mm; 
 	            margin-footer: 3mm; 
-                background-image: url({{ ENV('ASSET_URL').'/img/fundos/certificado_resized.png' }}); background-position: bottom right; background-repeat: no-repeat;
+                background-image: url({{ ENV('ASSET_URL').'/img/fundos/ciki_2023.jpg' }}); background-position: bottom right; background-repeat: no-repeat;
 
                 header: page-header;
 		        footer: page-footer;
@@ -27,14 +27,14 @@
     </head>
     <body>
         <htmlpagefooter name="page-footer">
-            <p style="font-size: 13px; text-align: center;">The authenticity of this document must be verified in the url {{ ENV('APP_URL') }}/certificados/validar/{{ $certificado->ds_hash_cer }}<p>
+            <p style="font-size: 13px; text-align: center;">The authenticity of this document can be verified in the url https://certificados.studiokem.ufsc.br/certificados/validar/{{ $certificado->ds_hash_cer }}<p>
         </htmlpagefooter>
 
         <div class="corpo">
             <h2>Papers Reviewer Certificate</h2>
-            <h1>{{ $certificado->participante->ds_nome_par }}</h1>
             <p>
-                participated as papers reviewer at the XI International Congress on Knowledge and Innovation (ciKi 2021), held in Maringá, Brazil, in virtual modality on November 18th and 19th, 2021. 
+                It is hereby certified that <strong>{{ $certificado->participante->ds_nome_par }}</strong> participated as papers reviewer in the joint edition of the 
+                18th International Conference on Knowledge Management (ICKM2023) and the 13th International Congress on Knowledge and Innovation (CiKi2023), held in Florianópolis, Brazil, from 22 to 24 November 2023.
             </p>
         </div>
     </body>
