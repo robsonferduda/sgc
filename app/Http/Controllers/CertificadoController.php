@@ -27,7 +27,7 @@ class CertificadoController extends Controller
 
     public function index()
     {
-        $certificados = Certificado::whereIn('id_modelo_certificado_moc', [24])->get();
+        $certificados = Certificado::whereIn('id_modelo_certificado_moc', [25,26])->get();
         //$certificados = Certificado::all();
         return view('certificados/index', compact('certificados'));
     }
