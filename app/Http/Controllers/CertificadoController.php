@@ -362,7 +362,7 @@ class CertificadoController extends Controller
 
             Mail::send('email.notificacao_workshop', $data, function($message) use ($to_name, $to_email, $hash, $evento, $tipo) {
                 $message->to($to_email, $to_name)
-                        ->subject('Certificado de '.$tipo.' disponível - '.$evento)
+                        ->subject('Retificação - Certificado de '.$tipo.' disponível - '.$evento)
                         ->from('nao.responda.studiokem@gmail.com','Não responda');
             });
 
