@@ -7,6 +7,7 @@ use Excel;
 use PDF;
 use Mail;
 use App\Utils;
+use App\Evento;
 use App\Certificado;
 use App\CertificadoMetadado;
 use App\Participante;
@@ -27,9 +28,10 @@ class CertificadoController extends Controller
 
     public function index()
     {
+        $eventos = Evento::orderBy('dt_inicio_eve')->get();
         $certificados = Certificado::whereIn('id_modelo_certificado_moc', [25,26])->get();
         //$certificados = Certificado::all();
-        return view('certificados/index', compact('certificados'));
+        return view('certificados/index', compact('eventos', 'certificados'));
     }
 
     public function arquivo()
