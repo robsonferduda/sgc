@@ -36,7 +36,7 @@
             <h1>{{ $certificado->participante->ds_nome_par }}</h1>
             <p>
                 Atuou como PARTICIPANTE do <strong>Workshop Conexão - Praça XV ao Mar</strong>,
-                desenvolvido pelo <strong>Laboratório de Cidades mais Humanas, Inteligentes e Sustentáveis (LabCHIS)</strong>, da <strong>Universidade Federal de Santa Catarina (UFSC)</strong>, entre os dias <strong>13 de novembro de 2023</strong> e <strong>17 de novembro de 2023</strong>, com carga horária de <strong>20</strong> horas semanais.
+                desenvolvido pelo <strong>Laboratório de Cidades mais Humanas, Inteligentes e Sustentáveis (LabCHIS)</strong>, da <strong>Universidade Federal de Santa Catarina (UFSC)</strong>, entre os dias <strong>13 de novembro de 2023</strong> e <strong>17 de novembro de 2023</strong>, com carga horária de <strong>25</strong> horas semanais.
             </p>
             <h4>Tópicos Abordados</h4>
             <p>Escolha do Local CHIS; Definição dos problemas principais, de acordo com os atores locais; </p>
