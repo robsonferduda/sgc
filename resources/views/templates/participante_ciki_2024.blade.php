@@ -11,7 +11,7 @@
             .rodape p {font-size: 12px; }
 
             @page {
-                margin: 10%;
+                margin: 7%;
                 margin-header: 3mm; 
 	            margin-footer: 3mm; 
                 background-image: url({{ ENV('ASSET_URL').'/img/fundos/ciki_2024.jpg' }}); background-position: bottom right; background-repeat: no-repeat;
@@ -21,7 +21,7 @@
             }
 
             @page-footer {
-                font-size: 10px;
+                font-size: 9px;
             }
         </style>
     </head>
