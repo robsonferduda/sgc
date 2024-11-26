@@ -2,7 +2,7 @@
     <head>
         <style>
             body { background-image: url({{ ENV('ASSET_URL').'/img/fundos/ciki_2024.jpg' }}); background-position: bottom right; background-repeat: no-repeat; }
-            .corpo { text-align: center; padding-top: 180px; min-height: 500px; }
+            .corpo { text-align: center; padding-top: 180px; min-height: 500px; padding-right: 50px; }
             .corpo p { font-size: 20px; }
             .corpo h1 { padding-bottom: 14px; }
             .corpo h2 { padding-bottom: 14px; }
