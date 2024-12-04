@@ -13,7 +13,7 @@
             @page {
                 margin: 10%;
                 margin-header: 3mm; 
-	            margin-footer: 3mm; 
+	            margin-footer: 0mm; 
                 background-image: url({{ ENV('ASSET_URL').'/img/fundos/ciki_2024.jpg' }}); background-position: bottom right; background-repeat: no-repeat;
 
                 header: page-header;
