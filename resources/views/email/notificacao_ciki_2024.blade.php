@@ -5,5 +5,5 @@ Prezado (a) <strong>{{ $name }}</strong>,
 <p>Para visualizar todos os certificados emitidos com seu email acesse:</p>
 <p><a href="{{ ENV('APP_URL') }}/certificados/segunda-via">{{ ENV('APP_URL') }}/certificados/segunda-via</a></p>
 <p>Atenciosamente,</p>
-<p>Comissão Organizadora do Congresso Internacional de Conhecimento e Inovação 2022</p>
+<p>Comissão Organizadora do Congresso Internacional de Conhecimento e Inovação 2024</p>
 <p style="color: red;"><strong>ATENÇÃO</strong>: Esta mensagem foi enviada automaticamente. Por favor, não responda a esta mensagem.</p>
