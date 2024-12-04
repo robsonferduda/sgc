@@ -34,8 +34,14 @@
                     </tr>
                 </tfoot>
                 <tbody>
-                    @foreach($modelos as $e)
-                       
+                    @foreach($modelos as $modelo)
+                        <tr>
+                            <td>{{ $modelo->ds_descricao_moc }}</td>
+                            <td>{{ $modelo->ds_template_moc }}</td>
+                            <td>
+                                <a title="Editar" href="#" class="btn btn-primary btn-link btn-icon"><i class="fa fa-edit fa-2x"></i></a>
+                            </td>
+                        </tr>
                     @endforeach
                 </tbody>
             </table>
