@@ -29,7 +29,7 @@ class CertificadoController extends Controller
     public function index()
     {
         $eventos = Evento::orderBy('dt_inicio_eve')->get();
-        $certificados = Certificado::whereIn('id_modelo_certificado_moc', [31])->get();
+        $certificados = Certificado::whereIn('id_modelo_certificado_moc', [4])->get();
         //$certificados = Certificado::all();
         return view('certificados/index', compact('eventos', 'certificados'));
     }
